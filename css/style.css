@@ -16,6 +16,7 @@
 	--clr-light: #fff;
 	--clr-dark: #303030;
 	--clr-accent: #16e0bd;
+	--clr-dark-green: #077b8a;
 
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
@@ -358,6 +359,20 @@ header {
 	margin: 0 auto;
 }
 
+.my-journey__title {
+	color: var(--clr-dark-green);
+	font-weight: var(--fw-bold);
+	margin: 0.5em 0 0 0;
+}
+
+.my-journey__company {
+	margin-top: 1em;
+}
+
+.my-journey__location {
+	margin: 0;
+}
+
 @media (min-width: 600px) {
 	.about-me {
 		display: grid;
@@ -394,16 +409,16 @@ header {
 			"logo location"
 			"logo text";
 		grid-column-gap: 2em;
+		margin-top: 1em;
 	}
 
 	.my-journey__company {
 		grid-area: company;
+		margin-top: 0;
 	}
 
 	.my-journey__title {
 		grid-area: title;
-		margin: 0.5em 0 0 0;
-
 	}
 
 	.my-journey__location {
@@ -417,6 +432,8 @@ header {
 
 	.my-journey__logo {
 		grid-area: logo;
+		width: 6em;
+		height: auto;
 	}
 }
 

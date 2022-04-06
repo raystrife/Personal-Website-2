@@ -290,7 +290,7 @@ header {
 
 	.intro__img {
 		grid-area: img;
-		min-width: 250px;
+		min-width: 300px;
 		position: relative;
 		z-index: 2;
 	}
@@ -310,9 +310,6 @@ header {
 
 .my-services {
 	background-color: var(--clr-dark);
-	background-image: url(../img/services-bg.jpg);
-	background-size: cover;
-	/*background-blend-mode: multiply;*/
 	color: var(--clr-light);
 	text-align: center;
 }
@@ -445,31 +442,35 @@ header {
 	text-align: center;
 }
 
-.portfolio {
+.projects {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-/*	max-width: 900px;
-	margin: 0 auto;*/  /*uncomment if you want to limit the max width of the images*/
+	column-gap: 30px;
+	row-gap: 30px;
+	max-width: 3000px;
+	margin: 50px auto;
 }
 
-.portfolio__item {
+.project__item {
 	background: var(--clr-accent);
 	overflow: hidden;
 }
 
-.portfolio__img {
+.project__img {
+	width: 100%;
+	height: 100%;
 	transition: 
 		transform 750ms cubic-bezier(.5, 0, .5, 1),
 		opacity 250ms linear;
 }
 
-.portfolio__item:focus {
+.project__item:focus {
 	position: relative;
 	z-index: 2;
 }
 
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
+.project__img:hover,
+.project__item:focus .project__img {
 	transform: scale(1.2);
 	opacity: .75;
 }
@@ -516,18 +517,4 @@ header {
 
 .social-list__link {
 	padding: .5em;
-}
-
-/*Individual portfolio item styles*/
-
-.portfolio-item-individual {
-	padding: 0 2em 2em;
-	max-width: 1000px;
-	margin: 0 auto;
-}
-
-.portfolio-item-individual p {
-	max-width: 600px;
-	margin-left: auto;
-	margin-right: auto;
 }

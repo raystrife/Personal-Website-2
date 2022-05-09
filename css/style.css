@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-/*Custom properties. Update them according to your design*/
+/*Custom properties*/
 
 :root {
 	--ff-primary: 'Source Sans Pro', sans-serif;
@@ -306,7 +306,7 @@ header {
 	}
 }
 
-/*My services section*/
+/*About me section*/
 
 .my-services {
 	background-color: var(--clr-dark);
@@ -401,7 +401,6 @@ header {
 
 	.my-journey {
 		display: grid;
-		/*grid-template-columns: 1fr 200px;*/
 		grid-template-areas:
 			"logo company"
 			"logo title"
@@ -521,7 +520,7 @@ header {
 	padding: .5em;
 }
 
-/*Individual portfolio item styles*/
+/*Individual project item's style*/
 
 .project-item-individual {
 	padding: 0 2em 2em;
